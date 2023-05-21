@@ -1,3 +1,36 @@
+/* Colors and Accents for the entire page */
+:root {
+  --accent-color-1: rgb(35, 26, 109);
+  --accent-color-2: rgb(149, 230, 230);
+  --accent-color-3: pink;
+}
+
+/* Applies to name title at top of page */
+#large-title {
+  color: var(--accent-color-1);
+  background-color: var(--accent-color-2);
+}
+
+/* Applies to Nav Bar */
+.nav-bar {
+  color: var(--accent-color-1);
+  background-color: var(--accent-color-2);
+  font-size: larger;
+}
+
+/* Nav Bar Psuedo Classes / Effects */
+.nav-bar:hover {
+  background-color: var(--accent-color-3);
+}
+  
+/* Applies to large main coding banner */
 #main-banner {
   width: 100%;
+}
+
+/* Applies to page sections (About Me, Work, Contact Me) */
+.section-title {
+  color: var(--accent-color-1);
+  text-decoration: underline;
+
 }
