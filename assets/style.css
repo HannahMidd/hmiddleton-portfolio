@@ -16,7 +16,8 @@
   color: var(--accent-color-1);
   background-color: var(--accent-color-2);
   font-size: larger;
-  align-items: center;
+  display: flex;
+  /* align-items: center; */
   display: inline;
   position: fixed;
   width: 1000px;
@@ -43,19 +44,25 @@
 /* Applies to "work" section displaying portfolio items */
 .project-boxes {
   width: 250px;
-  height: 75px;
+  height: 150px;
   background-color: var(--accent-color-1);
   color: var(--accent-color-2);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 /* Applies to all project boxes under "work" */
-#all-projects {
-/* display: flex; */
-/* flex-direction: row; */
+.all-projects {
+display: flex;
 flex-wrap: wrap;
-/* justify-content: space-around; */
-padding: 30px;
+justify-content: space-between;
 }
+
+.project-1 {
+  background-image: url(../assets/project-1-image.jpg)
+}
+
 
 
 #contact-me-items flex {
