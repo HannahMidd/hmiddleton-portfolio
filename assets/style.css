@@ -5,34 +5,35 @@
   --accent-color-3: rgb(83, 175, 236);
 }
 
-/* Applies to name title at top of page */
-#large-title {
-  color: var(--accent-color-1);
-  background-color: var(--accent-color-2);
-  
+/* Applies to main image at top of screen  */
+
+header {
+ background-image: url(./project-2-image.avif);
+ height: 300px;
 }
 
 /* Applies to Nav Bar */
 nav {
-  color: var(--accent-color-1);
-  background-color: var(--accent-color-2);
+  text-decoration: none;
+  color: var(--accent-color-2);
   font-size: larger;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  position: sticky;
   top: 0px;
+  padding: 0;
+  margin: 0;
+  
 }
 
 
 /* Nav Bar Psuedo Classes / Effects */
 .nav-item:hover {
   background-color: var(--accent-color-3);
+  color: var(--accent-color-2);
 }
 
-/* Applies to large main coding banner */
-#main-banner {
-  width: 100%;
-}
+
 
 /* Applies to page section titles (About Me, Work, Contact Me) */
 .section-title {
@@ -50,6 +51,11 @@ nav {
   justify-content: flex-start;
   flex-direction: column;
   margin: 10px 0;
+}
+
+.project-boxes:hover {
+  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
 }
 
 /* Applies to Project Title and Subtitle */
@@ -96,13 +102,15 @@ nav {
   color: var(--accent-color-1);
   font-size: medium;
   display: flex;
+  /* justify-content: flex-start; */
   justify-content: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
   top: 0px;
 }
 
 /* Applies Psuedo Classes / Effects to Contact Info*/
 .contact:hover {
   background-color: var(--accent-color-3);
+  color: var(--accent-color-2);
 }
 
