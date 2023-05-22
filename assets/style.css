@@ -3,6 +3,8 @@
   --accent-color-1: rgb(35, 26, 109);
   --accent-color-2: rgb(149, 230, 230);
   --accent-color-3: rgb(83, 175, 236);
+  --accent-color-4: rgb(11, 11, 240);
+
 }
 
 /* Applies to main image at top of screen  */
@@ -51,6 +53,7 @@ nav {
   justify-content: flex-start;
   flex-direction: column;
   margin: 10px 0;
+  border: 5px solid var(--accent-color-1);
 }
 
 .project-boxes:hover {
