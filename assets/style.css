@@ -9,26 +9,27 @@
 #large-title {
   color: var(--accent-color-1);
   background-color: var(--accent-color-2);
+  
 }
 
 /* Applies to Nav Bar */
-.nav-bar {
+nav {
   color: var(--accent-color-1);
   background-color: var(--accent-color-2);
   font-size: larger;
   display: flex;
-  /* align-items: center; */
-  display: inline;
-  position: fixed;
-  width: 1000px;
-  
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0px;
+ 
 }
 
+
 /* Nav Bar Psuedo Classes / Effects */
-.nav-bar:hover {
+.nav-item:hover {
   background-color: var(--accent-color-3);
 }
-  
+
 /* Applies to large main coding banner */
 #main-banner {
   width: 100%;
@@ -38,32 +39,41 @@
 .section-title {
   color: var(--accent-color-1);
   text-decoration: underline;
-
 }
 
 /* Applies to "work" section displaying portfolio items */
 .project-boxes {
-  width: 250px;
-  height: 150px;
+  width: 100%;
+  height: 100px;
   background-color: var(--accent-color-1);
   color: var(--accent-color-2);
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin: 10px 0;
+  
 }
+.project-heading {
+  margin-left:10px;
+}
+
+.subheading {
+  margin: 0 0 0 10px;
+}
+
 
 /* Applies to all project boxes under "work" */
 .all-projects {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-
-.project-1 {
-  background-image: url(../assets/project-1-image.jpg)
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 
+#project-1 {
+  background-image: url(../assets/project-1-image.jpg);
+}
 
 #contact-me-items flex {
   display: flex;
