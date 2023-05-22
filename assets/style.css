@@ -16,6 +16,11 @@
   color: var(--accent-color-1);
   background-color: var(--accent-color-2);
   font-size: larger;
+  align-items: center;
+  display: inline;
+  position: fixed;
+  width: 1000px;
+  
 }
 
 /* Nav Bar Psuedo Classes / Effects */
@@ -28,9 +33,33 @@
   width: 100%;
 }
 
-/* Applies to page sections (About Me, Work, Contact Me) */
+/* Applies to page section titles (About Me, Work, Contact Me) */
 .section-title {
   color: var(--accent-color-1);
   text-decoration: underline;
 
+}
+
+/* Applies to "work" section displaying portfolio items */
+.project-boxes {
+  width: 250px;
+  height: 75px;
+  background-color: var(--accent-color-1);
+  color: var(--accent-color-2);
+}
+
+/* Applies to all project boxes under "work" */
+#all-projects {
+/* display: flex; */
+/* flex-direction: row; */
+flex-wrap: wrap;
+/* justify-content: space-around; */
+padding: 30px;
+}
+
+
+#contact-me-items flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
