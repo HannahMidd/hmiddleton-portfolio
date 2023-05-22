@@ -2,7 +2,7 @@
 :root {
   --accent-color-1: rgb(35, 26, 109);
   --accent-color-2: rgb(149, 230, 230);
-  --accent-color-3: rgb(166, 67, 175);
+  --accent-color-3: rgb(83, 175, 236);
 }
 
 /* Applies to name title at top of page */
@@ -76,12 +76,27 @@ nav {
 #project-1 {
   background-image: url(../assets/project-1-image.jpg);
 }
-
+#project-2 {
+  background-image: url(../assets/project-2-image.jpg);
+}
+#project-3 {
+  background-image: url(../assets/project-3-image.jpg);
+}
+#project-4 {
+  background-image: url(../assets/project-4-image.jpg);
+}
+#project-5 {
+  background-image: url(../assets/project-5-image.jpg);
+}
+#project-6 {
+  background-image: url(../assets/project-6-image.jpg);
+}
 /* Contact Me Section */
 .contact-me-items {
   color: var(--accent-color-1);
   font-size: medium;
   display: flex;
+  justify-content: flex-start;
   justify-content: space-evenly;
   top: 0px;
 }
