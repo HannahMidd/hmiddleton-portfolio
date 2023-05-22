@@ -2,7 +2,7 @@
 :root {
   --accent-color-1: rgb(35, 26, 109);
   --accent-color-2: rgb(149, 230, 230);
-  --accent-color-3: pink;
+  --accent-color-3: rgb(166, 67, 175);
 }
 
 /* Applies to name title at top of page */
@@ -21,7 +21,6 @@ nav {
   justify-content: space-evenly;
   position: sticky;
   top: 0px;
- 
 }
 
 
@@ -51,8 +50,9 @@ nav {
   justify-content: flex-start;
   flex-direction: column;
   margin: 10px 0;
-  
 }
+
+/* Applies to Project Title and Subtitle */
 .project-heading {
   margin-left:10px;
 }
@@ -71,12 +71,23 @@ nav {
 }
 
 
+
+/*Applies to individual project IDs */
 #project-1 {
   background-image: url(../assets/project-1-image.jpg);
 }
 
-#contact-me-items flex {
+/* Contact Me Section */
+.contact-me-items {
+  color: var(--accent-color-1);
+  font-size: medium;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  top: 0px;
 }
+
+/* Applies Psuedo Classes / Effects to Contact Info*/
+.contact:hover {
+  background-color: var(--accent-color-3);
+}
+
