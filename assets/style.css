@@ -15,7 +15,8 @@ body {
 /* Applies to main image at top of screen  */
 header {
   background-image: url(./Profile\ Header\ Photo.jpg);
-  height: 500px;
+  height: 300px;
+  border: 5px solid var(--accent-color-1);
 }
 
 /* Applies to Nav Bar */
