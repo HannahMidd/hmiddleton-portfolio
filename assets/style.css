@@ -45,6 +45,9 @@ nav a {
   color: var(--accent-color-2);
 }
 
+a {
+  color: var(--accent-color-1);
+}
 /* Applies to page section titles (About Me, Work, Contact Me) */
 .section-title {
   color: var(--accent-color-1);
@@ -62,15 +65,26 @@ nav a {
   flex-direction: column;
   margin: 10px 0;
   border: 5px solid var(--accent-color-1);
-  filter: blur(35%);
-  -webkit-filter: blur(35%);
+  filter: blur(85%);
+  -webkit-filter: blur(85%);
 }
+
+/* Applies to boxes behind Project name and tools used */
+.TitleSubheadingBox {
+  background-color: var(--accent-color-2);
+  color: var(--accent-color-1);
+  width: 15%;
+  height: 100%;
+  padding-left: 10px;
+ border: 5px solid var(--accent-color-1);
+}
+
 
 /* Applies hover brightening effect to projects */
 .project-boxes:hover {
   filter: blur(0%);
-  filter: brightness(200%);
-  -webkit-filter: blur(0%);
+  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
 }
 
 /* Applies to Project Title and Subtitle */
@@ -111,7 +125,15 @@ nav a {
 #project-6 {
   background-image: url(../assets/project-6-image.jpg);
 }
+/* Overlay links to project */
 
+overlay-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /* Contact Me Section */
 .contact-me-items {
   color: var(--accent-color-1);
