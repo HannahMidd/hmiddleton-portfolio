@@ -2,7 +2,7 @@
 
 ## Description
 
-After 6 years of sales leadership and 3 startup companies, I am tired of being envious of the amazing Software Engineers in my company, I have decided to make the transition! This webpage will be used as my portfolio to showcase my work, share my contact information and my resume.
+After 6 years of sales leadership and 3 startup companies, I am tired of being envious of the amazing Software Engineers in my company, I have decided to make the transition myself! This webpage will be used as my portfolio to showcase my work, share my contact information and my resume.
 
 ## Installation
 
