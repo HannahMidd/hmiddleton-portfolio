@@ -10,6 +10,8 @@
 /* Applies background color to entire page */
 body {
   background-color: var(--accent-color-5);
+  margin-left: 2%;
+  margin-right: 3%;
 }
 
 /* Applies to main image at top of screen  */
@@ -95,6 +97,8 @@ a {
 /* Adds Margin around smaller project subheadings */
 .subheading {
   margin: 0 0 0 10px;
+  /* display: flex;
+  align-items: ; */
 }
 
 /* Applies to all project boxes under "work" */
@@ -192,4 +196,13 @@ footer h4 {
     font-size: 0.9em;
     display: flex;
   }
+  .project-heading {
+    font-size: 0.8em;
+    display: flex;
+  }
+   .subheading {
+    font-size: 0.5em;
+    display: flex;
+  }
+
 }

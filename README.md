@@ -10,7 +10,9 @@ N/A
 
 ## Usage
 
-Portfolio for Hannah Middleton showcasing projects.
+The portfolio for Hannah Middletons showcasing projects can be found at the following URL: https://hannahmidd.github.io/HMiddleton-Portfolio/
+
+![Alt Text](./assets/PortfolioScreenshot.png)
 
 To use this webpage, you can click on items in the navigation bar to be directed to that section. To click into a project to view in detail, click on the name of the project. To view my resume, click on "resume" to view. Please use any of the information listed under "Contact Me" to connect. 
 
