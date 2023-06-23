@@ -119,9 +119,7 @@ a {
 /* Adds Margin around smaller project subheadings */
 .subheading {
     margin: 0 0 0 10px;
-   
- 
-}
+   }
 
 /* Applies to all project boxes under "work" */
 .all-projects {
