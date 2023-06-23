@@ -9,14 +9,15 @@
 
 /* Applies background color to entire page */
 body {
-  background-color: var(--accent-color-5);
+  /* background-color: var(--accent-color-5); */
+  background-image: url(./SAMPLEBACKGROUND.jpg);
   margin-left: 2%;
   margin-right: 3%;
 }
 
 /* Applies to main image at top of screen  */
 header {
-  background-image: url(./Profile\ Header\ Photo.jpg);
+  background-image: url(./SAMPLEBACKGROUND.jpg);
   height: 300px;
   border: 5px solid var(--accent-color-1);
 }
