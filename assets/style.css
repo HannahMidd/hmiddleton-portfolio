@@ -56,6 +56,26 @@ a {
   text-decoration: underline;
 }
 
+/* Applies to about me section and photo */
+
+#about-me-photo {
+  border: 5px solid var(--accent-color-1);
+  height: 400px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+#about-me-paragraph {
+ margin-left: 25px;
+ display: flex;
+ flex-wrap: wrap;
+ font-size: 25px;
+
+}
+
 /* Applies to "work" section displaying portfolio items */
 .project-boxes {
   width: 100%;
