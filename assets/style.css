@@ -1,136 +1,137 @@
 /* Colors and Accents for the entire page */
 :root {
-  --accent-color-1: rgb(35, 26, 109);
-  --accent-color-2: rgb(149, 230, 230);
-  --accent-color-3: rgb(83, 175, 236);
-  --accent-color-4: rgb(11, 11, 240);
-  --accent-color-5: rgb(201, 234, 238);
+    --accent-color-1: #3533cd;
+    --accent-color-2: #0cc0df;
+    --accent-color-3: rgb(83, 175, 236);
+    --accent-color-4: #b2249f;
+    --accent-color-5: rgb(201, 234, 238);
 }
 
 /* Applies background color to entire page */
 body {
-  /* background-color: var(--accent-color-5); */
-  background-image: url(./SAMPLEBACKGROUND.jpg);
-  margin-left: 2%;
-  margin-right: 3%;
+    /* background-color: var(--accent-color-5); */
+    background-image: url(./SAMPLEBACKGROUND.jpg);
+    margin-left: 2%;
+    margin-right: 3%;
+    font-family: 'Canva Sans', sans-serif;
 }
 
 /* Applies to main image at top of screen  */
 header {
-  background-image: url(./SAMPLEBACKGROUND.jpg);
-  height: 300px;
-  border: 5px solid var(--accent-color-1);
+    background-color: var(--accent-color-1);
+    height: 225px;
+    border: 5px solid black;
+}
+#logo {
+    height: 225px;
+    margin-left: -195px;
 }
 
 /* Applies to Nav Bar */
 nav {
-  text-decoration: none;
-  color: var(--accent-color-2);
-  font-size: larger;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  top: 0px;
-  padding: 0;
-  margin: 0;
-
-  /* Applies to Navigation Bar Items */
+    text-decoration: none;
+    color: var(--accent-color-2);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+/* Applies to Navigation Bar Items */
+
 nav a {
-  color: var(--accent-color-2);
-  font-size: 1.5em;
-  text-decoration: none;
+    color: var(--accent-color-2);
+    font-size: 1.5em;
+    text-decoration: none;
+    padding-top: 100px;
 }
 
 /* Nav Bar Psuedo Classes / Effects */
 .nav-item:hover {
-  background-color: var(--accent-color-3);
-  color: var(--accent-color-2);
+    background-color: var(--accent-color-3);
+    color: var(--accent-color-2);
 }
 
 a {
-  color: var(--accent-color-1);
+    color: var(--accent-color-1);
 }
 /* Applies to page section titles (About Me, Work, Contact Me) */
 .section-title {
-  color: var(--accent-color-1);
-  text-decoration: underline;
+    color: var(--accent-color-4);
+    background-color: var(--accent-color-1);
+    border: 5px solid black;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 /* Applies to about me section and photo */
 
 #about-me-photo {
-  border: 5px solid var(--accent-color-1);
-  height: 400px;
+    border: 5px solid var(--accent-color-1);
+    height: 400px;
 }
 
+/* Entire about me box */
 .about {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color-1);
+    border: 5px solid black;
 }
 
 #about-me-paragraph {
- margin-left: 25px;
- display: flex;
- flex-wrap: wrap;
- font-size: 25px;
-
+    margin-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    margin-right: 25px;
+    color: var(--accent-color-2);
 }
 
 /* Applies to "work" section displaying portfolio items */
 .project-boxes {
-  width: 100%;
-  height: 100px;
-  background-color: var(--accent-color-1);
-  color: var(--accent-color-2);
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: 10px 0;
-  border: 5px solid var(--accent-color-1);
-  filter: blur(85%);
-  -webkit-filter: blur(85%);
-}
-
-/* Applies to boxes behind Project name and tools used */
-.TitleSubheadingBox {
-  background-color: var(--accent-color-2);
-  color: var(--accent-color-1);
-  width: 15%;
-  height: 100%;
+    width: 48%;
+    height: 100px;
+    background: linear-gradient(to right, #b2249f, #3533cd);
+    color: var(--accent-color-2);
   padding-left: 10px;
- border: 5px solid var(--accent-color-1);
+    margin: 10px 0;
+    border: 5px solid var(--accent-color-1);
+    filter: blur(85%);
+    -webkit-filter: blur(85%);
 }
 
 
 /* Applies hover brightening effect to projects */
 .project-boxes:hover {
-  filter: blur(0%);
-  filter: brightness(120%);
-  -webkit-filter: brightness(120%);
+    filter: blur(0%);
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
 }
 
 /* Applies to Project Title and Subtitle */
 .project-heading {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 /* Adds Margin around smaller project subheadings */
 .subheading {
-  margin: 0 0 0 10px;
-  /* display: flex;
-  align-items: ; */
+    margin: 0 0 0 10px;
+   
+ 
 }
 
 /* Applies to all project boxes under "work" */
 .all-projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-direction: row; */
 }
 
-/*Applies to individual project IDs */
+/* Applies to individual project IDs
 #project-1 {
   background-image: url(../assets/project-1-image.jpg);
   height: 250px;
@@ -149,81 +150,80 @@ a {
 }
 #project-6 {
   background-image: url(../assets/project-6-image.jpg);
-}
+} */
 /* Overlay links to project */
 
 overlay-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 /* Contact Me Section */
 .contact-me-items {
-  color: var(--accent-color-1);
-  font-size: medium;
-  display: flex;
-  justify-content: flex-start;
-  justify-content: space-between;
-  top: 0px;
+    color: var(--accent-color-1);
+    font-size: medium;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    top: 0px;
 }
 
 /* Colors the contact me items */
 .contact-me-items a {
-  color: var(--accent-color-1);
-  font-size: 1.5em;
-  display: flex;
-  align-items: center;
-  /* flex-wrap: wrap; */
-  padding-bottom: 20px;
+    color: var(--accent-color-1);
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding-bottom: 20px;
 }
 
 /* Applies Psuedo Classes / Effects to Contact Info*/
 .contact:hover {
-  background-color: var(--accent-color-3);
-  color: var(--accent-color-2);
+    background-color: var(--accent-color-3);
+    color: var(--accent-color-2);
 }
 
 /* Applies size to all section titles */
 h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 /* Applies CSS to "Made with CSS and love" footer */
 footer h4 {
-  color: var(--accent-color-3);
-  background-color: var(--accent-color-1);
-  height: 15px;
-  margin: 0;
-  padding: 25px;
-  display: flex;
-  justify-content: center;
+    color: var(--accent-color-3);
+    background-color: var(--accent-color-1);
+    height: 15px;
+    margin: 0;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Media Screens (also look at line 125)*/
 @media screen and (max-width: 820px) {
-  .contact-me-items a {
-    font-size: 1em;
-  }
-  .contact-me-items {
-    display: block;
-  }
-  nav {
-    font-size: 1em;
-    display: block;
-  }
-  nav a {
-    font-size: 0.9em;
-    display: flex;
-  }
-  .project-heading {
-    font-size: 0.8em;
-    display: flex;
-  }
-   .subheading {
-    font-size: 0.5em;
-    display: flex;
-  }
-
+    .contact-me-items a {
+        font-size: 1em;
+    }
+    .contact-me-items {
+        display: block;
+    }
+    nav {
+        font-size: 1em;
+        display: block;
+    }
+    nav a {
+        font-size: 0.9em;
+        display: flex;
+    }
+    .project-heading {
+        font-size: 0.8em;
+        display: flex;
+    }
+    .subheading {
+        font-size: 0.5em;
+        display: flex;
+    }
 }
