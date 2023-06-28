@@ -19,7 +19,7 @@ body {
 header {
     background-color: var(--accent-color-1);
     height: 225px;
-    border: 5px solid black;
+    border: 5px solid var(--accent-color-3);
 }
 #logo {
     height: 225px;
@@ -77,7 +77,7 @@ a {
     display: flex;
     align-items: center;
     background-color: var(--accent-color-1);
-    border: 5px solid black;
+    border: 5px solid var(--accent-color-3);
 }
 
 #about-me-paragraph {
@@ -118,13 +118,22 @@ a {
 }
 
 /* Applies to Project Title and Subtitle */
+.title-lang-box {
+    background-color: rgba(170, 174, 159, 0.70);
+    width: 40%;
+    border: px solid var(--accent-color-4);
+    margin: 4px;
+
+}
+
 .project-heading {
     margin-left: 10px;
+    color: var(--accent-color-2);
 }
 
 /* Adds Margin around smaller project subheadings */
 .subheading {
-    margin: 0 0 0 10px;
+    /* margin: 0 0 0 10px; */
    }
 
 /* Applies to all project boxes under "work" */
@@ -136,6 +145,7 @@ a {
     flex-direction: row;
 }
 
+
 #project-1 {
   background-image: url(../assets/project-pics/A1W8Q0+AH9L._AC_SX569_.jpg)
 }
@@ -143,7 +153,7 @@ a {
   background-image: url(../assets/project-pics/Cool\ summer\ ferns.jpg);
 }
 #project-3 {
-  background-image: url(../assets/project-pics/Elephant\ ears\ teal\ .jpg);
+  background-image: url(../assets/project-pics/Taro\ Leaf\ -\ Sage\ Green.jpg);
 }
 #project-4 {
   background-image: url(../assets/project-pics/Eucalyptus\ Leaf\ Pattern\ in\ Teal\,\ Sage\ and\ Mint\ Green\ on\ White.jpg);
