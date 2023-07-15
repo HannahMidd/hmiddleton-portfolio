@@ -1,7 +1,7 @@
 /* Colors and Accents for the entire page */
 :root {
-    --accent-color-1: #B2C1A2;
-    --accent-color-2: #517470;
+    --accent-color-2: #141d27;
+    --accent-color-1: #517470;
     --accent-color-3: #30513E;
     --accent-color-4: #AAAE9F;
     --accent-color-5: #f1e5d0;
@@ -9,22 +9,61 @@
 
 /* Applies background color to entire page */
 body {
-    background-color: var(--accent-color-5);
+    background-color: var(--accent-color-2);
     margin-left: 2%;
     margin-right: 3%;
     font-family: 'Canva Sans', sans-serif;
 }
 
-/* Applies to main image at top of screen  */
+/* Applies to main image at top of screen 
 header {
     background-color: var(--accent-color-2);
     height: 160px;
     border: 5px solid var(--accent-color-3);
+} */
+
+/* ================TEST===================== */
+
+/* Moving header keyframe */
+header {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
 }
-#logo {
+
+.text {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  background-image: url(./project-pics-2/marblehero.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBackground 120s infinite linear;
+  -webkit-animation: moveBackground 120s infinite linear;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -200%;
+  }
+}
+
+
+
+/* =====================END TEST==================== */
+
+/* #logo {
     height: 160px;
     
-}
+} */
 
 /* Applies to Nav Bar */
 nav {
