@@ -1,10 +1,10 @@
 /* Colors and Accents for the entire page */
 :root {
+    --accent-color-3: #f0e4f8;
     --accent-color-2: #141d27;
-    --accent-color-1: #517470;
-    --accent-color-3: #30513E;
-    --accent-color-4: #AAAE9F;
-    --accent-color-5: #f1e5d0;
+    --accent-color-1: #8397f1;
+    --accent-color-4: #08059b;
+    --accent-color-5: #a2ceda;
 }
 
 /* Applies background color to entire page */
@@ -33,9 +33,14 @@ header {
   text-align: center;
 }
 
+.page-title {
+    display: block;
+   text-align: left;
+}
+
 .text {
   font-family: Arial, sans-serif;
-  font-size: 36px;
+  font-size: 56px;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 0;
@@ -43,8 +48,8 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: moveBackground 120s infinite linear;
-  -webkit-animation: moveBackground 120s infinite linear;
+  animation: moveBackground 100s infinite linear;
+  -webkit-animation: moveBackground 100s infinite linear;
 }
 
 @keyframes moveBackground {
@@ -60,10 +65,7 @@ header {
 
 /* =====================END TEST==================== */
 
-/* #logo {
-    height: 160px;
-    
-} */
+
 
 /* Applies to Nav Bar */
 nav {
@@ -71,8 +73,8 @@ nav {
     color: var(--accent-color-1);
     font-weight: bold;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    text-align: right;
 }
 
 /* Applies to Navigation Bar Items */
@@ -81,7 +83,7 @@ nav a {
     color: var(--accent-color-1);
     font-size: 1.5em;
     text-decoration: none;
-    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 /* Nav Bar Psuedo Classes / Effects */
@@ -94,8 +96,8 @@ a {
 }
 /* Applies to page section titles (About Me, Work, Contact Me) */
 .section-title {
-    color: var(--accent-color-3);
-    background-color: var(--accent-color-1);
+    color: var(--accent-color-1);
+    background-color: var(--accent-color-2);
     border: 5px solid var(--accent-color-3);
     width: 98%;
     padding: 10px;
@@ -104,8 +106,8 @@ a {
 }
 
 .work-section-title {
-    color: var(--accent-color-3);
-    background-color: var(--accent-color-1);
+    color: var(--accent-color-1);
+    background-color: var(--accent-color-2);
     border: 5px solid var(--accent-color-3);
     width: 100%;
     padding: 10px;
@@ -125,9 +127,9 @@ a {
 .about {
     display: flex;
     align-items: center;
-    background-color: var(--accent-color-1);
+    background-color: var(--accent-color-2);
     border: 5px solid var(--accent-color-3);
-    background-image: url(../assets/project-pics/A1W8Q0+AH9L._AC_SX569_.jpg);
+
 }
 
 #about-me-paragraph {
@@ -137,9 +139,8 @@ a {
     font-size: 25px;
     margin-right: 35px;
     padding: 15px;
-    color: var(--accent-color-2);
-    background-color: var(--accent-color-1);
-    border: 5px solid var(--accent-color-3);
+    color: var(--accent-color-1);
+    /* background-color: var(--accent-color-1); */
 }
 
 /* Applies to "work" section displaying portfolio items */
@@ -222,13 +223,7 @@ a {
 } 
 /* Overlay links to project */
 
-/* overlay-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
+
 /* Contact Me Section */
 
 .contact-me-items {
