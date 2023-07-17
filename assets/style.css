@@ -26,46 +26,43 @@ header {
 
 /* Moving header keyframe */
 header {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-  color: #fff;
-  text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
 }
 
 .page-title {
     display: block;
-   text-align: left;
+    text-align: left;
 }
 
 .text {
-  font-family: Arial, sans-serif;
-  font-size: 56px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 0;
-  background-image: url(./project-pics-2/marblehero.jpg);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: moveBackground 100s infinite linear;
-  -webkit-animation: moveBackground 100s infinite linear;
+    font-family: Arial, sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    background-image: url(./project-pics-2/marblehero.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBackground 100s infinite linear;
+    -webkit-animation: moveBackground 100s infinite linear;
 }
 
 @keyframes moveBackground {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 -200%;
-  }
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -200%;
+    }
 }
 
-
-
 /* =====================END TEST==================== */
-
-
 
 /* Applies to Nav Bar */
 nav {
@@ -83,7 +80,7 @@ nav a {
     color: var(--accent-color-1);
     font-size: 1.5em;
     text-decoration: none;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /* Nav Bar Psuedo Classes / Effects */
@@ -129,7 +126,6 @@ a {
     align-items: center;
     background-color: var(--accent-color-2);
     border: 5px solid var(--accent-color-3);
-
 }
 
 #about-me-paragraph {
@@ -147,13 +143,12 @@ a {
 .project-boxes {
     width: 48%;
     color: var(--accent-color-2);
-  padding-left: 10px;
+    padding-left: 10px;
     margin: 10px 0;
     border: 5px solid var(--accent-color-3);
     filter: blur(85%);
     -webkit-filter: blur(85%);
 }
-
 
 /* Applies hover brightening effect to projects */
 .project-boxes:hover {
@@ -165,27 +160,25 @@ a {
 /* Applies to Project Title and Subtitle */
 .title-lang-box {
     background-color: var(--accent-color-2);
-     /* background-color: rgba(170, 174, 159, 0.70); */
+    /* background-color: rgba(170, 174, 159, 0.70); */
     width: 40%;
     border: 3px solid var(--accent-color-3);
     margin: 6px;
     padding: 3px;
-
 }
-
 
 /* Applies to project title / name */
 .project-heading {
     margin-left: 10px;
     margin-top: 5px;
-    color: var(--accent-color-4);
+    color: var(--accent-color-1);
 }
 
 /* Adds Margin around smaller project subheadings */
 .subheading {
     margin: 0 0 5px 10px;
-    color: var(--accent-color-4);
-   }
+    color: var(--accent-color-3);
+}
 
 /* Applies to all project boxes under "work" */
 .all-projects {
@@ -196,33 +189,78 @@ a {
     flex-direction: row;
 }
 
-
 #project-1 {
-  background-image: url(../assets/project-pics-2/hero.avif)
+    background-image: url(../assets/project-pics-2/hero.avif);
 }
 #project-2 {
-  background-image: url(../assets/project-pics/Cool\ summer\ ferns.jpg);
+    background-image: url(../assets/project-pics/Cool\ summer\ ferns.jpg);
 }
 #project-3 {
-  background-image: url(../assets/project-pics/Taro\ Leaf\ -\ Sage\ Green.jpg);
+    background-image: url(../assets/project-pics/Taro\ Leaf\ -\ Sage\ Green.jpg);
 }
 #project-4 {
-  background-image: url(../assets/project-pics/Eucalyptus\ Leaf\ Pattern\ in\ Teal\,\ Sage\ and\ Mint\ Green\ on\ White.jpg);
+    background-image: url(../assets/project-pics/Eucalyptus\ Leaf\ Pattern\ in\ Teal\,\ Sage\ and\ Mint\ Green\ on\ White.jpg);
 }
 #project-5 {
-  background-image: url(../assets/project-pics/Flower\ Toss-Navy-Teal\ Collection.jpg);
+    background-image: url(../assets/project-pics/Flower\ Toss-Navy-Teal\ Collection.jpg);
 }
 #project-6 {
-  background-image: url(../assets/project-pics/Flowers\ for\ Emma\ in\ Sage\ and\ Teal.jpg);
-} 
+    background-image: url(../assets/project-pics/Flowers\ for\ Emma\ in\ Sage\ and\ Teal.jpg);
+}
 #project-7 {
-  background-image: url(../assets/project-pics/Forest\ dragons\ green\ on\ a\ dark\ green\ background.jpg);
-} 
+    background-image: url(../assets/project-pics/Forest\ dragons\ green\ on\ a\ dark\ green\ background.jpg);
+}
 #project-8 {
-  background-image: url(../assets/project-pics/Hidden\ unicorn\ woods.jpg);
-} 
+    background-image: url(../assets/project-pics/Hidden\ unicorn\ woods.jpg);
+}
 /* Overlay links to project */
 
+/* CAROUSEL ITEMS */
+
+.carousel-inner {
+    padding: 1em;
+}
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+    .carousel-inner {
+        display: flex;
+    }
+}
+.card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+    .card .img-wrapper {
+        height: 17em;
+    }
+}
+
+/* END CAROUSEL ITEMS */
 
 /* Contact Me Section */
 
@@ -291,5 +329,18 @@ footer h4 {
     .subheading {
         font-size: 0.5em;
         display: flex;
+    }
+}
+
+/* screen for carousel */
+
+@media (min-width: 768px) {
+    .carousel-inner {
+        display: flex;
+    }
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
     }
 }
