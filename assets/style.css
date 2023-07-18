@@ -189,11 +189,11 @@ a {
     flex-direction: row;
 }
 
-#project-1 {
-    background-image: url(../assets/project-pics-2/hero.avif);
+/* #project-1 {
+    background-image: url(../assets/project-pics-2/bassinvaders.png);
 }
 #project-2 {
-    background-image: url(../assets/project-pics/Cool\ summer\ ferns.jpg);
+    background-image: url(../assets/project-pics-2/Fit-N-Fresh.png);
 }
 #project-3 {
     background-image: url(../assets/project-pics/Taro\ Leaf\ -\ Sage\ Green.jpg);
@@ -213,7 +213,7 @@ a {
 #project-8 {
     background-image: url(../assets/project-pics/Hidden\ unicorn\ woods.jpg);
 }
-/* Overlay links to project */
+Overlay links to project */
 
 /* CAROUSEL ITEMS */
 
