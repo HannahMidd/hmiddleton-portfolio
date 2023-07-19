@@ -3,6 +3,7 @@ if (window.matchMedia('(min-width: 768px)').matches) {
     var carousel = new bootstrap.Carousel(multipleCardCarousel, {
         interval: false,
     });
+    console.log('match media works');
     var carouselWidth = $('.carousel-inner')[0].scrollWidth;
     var cardWidth = $('.carousel-item').width();
     var scrollPosition = 0;
