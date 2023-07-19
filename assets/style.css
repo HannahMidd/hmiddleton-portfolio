@@ -263,7 +263,12 @@ Overlay links to project */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Add this line to hide any image parts that overflow the container */
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .card img {
@@ -280,6 +285,18 @@ Overlay links to project */
 }
 
 /* END CAROUSEL ITEMS */
+
+/* Buttons in Carousel items  */
+
+.btn-primary {
+background-color: var(--accent-color-1);
+color: var(--accent-color-2);
+}
+
+.btn-secondary {
+background-color: var(--accent-color-5);
+color: var(--accent-color-2);
+}
 
 /* Contact Me Section */
 
