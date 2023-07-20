@@ -132,70 +132,9 @@ Applies to "work" section displaying portfolio items
     -webkit-filter: blur(85%);
 }
 
-/* Applies hover brightening effect to projects */
-.project-boxes:hover {
-    filter: blur(0%);
-    filter: brightness(120%);
-    -webkit-filter: brightness(120%);
-}
 
-/* Applies to Project Title and Subtitle */
-.title-lang-box {
-    background-color: var(--accent-color-2);
-    /* background-color: rgba(170, 174, 159, 0.70); */
-    width: 40%;
-    border: 3px solid var(--accent-color-3);
-    margin: 6px;
-    padding: 3px;
-}
 
-/* Applies to project title / name */
-.project-heading {
-    margin-left: 10px;
-    margin-top: 5px;
-    color: var(--accent-color-1);
-}
 
-/* Adds Margin around smaller project subheadings */
-.subheading {
-    margin: 0 0 5px 10px;
-    color: var(--accent-color-3);
-}
-
-/* Applies to all project boxes under "work" */
-.all-projects {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-/* #project-1 {
-    background-image: url(../assets/project-pics-2/bassinvaders.png);
-}
-#project-2 {
-    background-image: url(../assets/project-pics-2/Fit-N-Fresh.png);
-}
-#project-3 {
-    background-image: url(../assets/project-pics/Taro\ Leaf\ -\ Sage\ Green.jpg);
-}
-#project-4 {
-    background-image: url(../assets/project-pics/Eucalyptus\ Leaf\ Pattern\ in\ Teal\,\ Sage\ and\ Mint\ Green\ on\ White.jpg);
-}
-#project-5 {
-    background-image: url(../assets/project-pics/Flower\ Toss-Navy-Teal\ Collection.jpg);
-}
-#project-6 {
-    background-image: url(../assets/project-pics/Flowers\ for\ Emma\ in\ Sage\ and\ Teal.jpg);
-}
-#project-7 {
-    background-image: url(../assets/project-pics/Forest\ dragons\ green\ on\ a\ dark\ green\ background.jpg);
-}
-#project-8 {
-    background-image: url(../assets/project-pics/Hidden\ unicorn\ woods.jpg);
-}
-Overlay links to project */
 
 /* CAROUSEL ITEMS */
 
@@ -266,6 +205,12 @@ Overlay links to project */
     }
 }
 
+/* Applies hover brightening effect to carousel items */
+.d-block.w-100:hover {
+    filter: blur(0%);
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+}
 /* END CAROUSEL ITEMS */
 
 /* Buttons in Carousel items  */
@@ -280,6 +225,10 @@ background-color: var(--accent-color-5);
 color: var(--accent-color-2);
 }
 
+.btn:hover {
+    background-color: var(--accent-color-2);
+}
+
 /* Contact Me Section */
 
 .contact-me-items {
@@ -292,28 +241,15 @@ color: var(--accent-color-2);
     padding-right: 9%;
 }
 
-/* Colors the contact me items */
-.contact-me-items a {
-    color: var(--accent-color-1);
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: row;
-
-    padding-bottom: 20px;
-}
 
 /* Applies Psuedo Classes / Effects to Contact Info*/
 .contact:hover {
-    background-color: var(--accent-color-3);
-    color: var(--accent-color-2);
+    background-color: var(--accent-color-5);
 }
 
-/* Applies size to all section titles */
-h1 {
-    font-size: 2.5em;
-}
 
-/* Applies CSS to "Made with CSS and love" footer */
+
+/* Applies "Dont Be Shy - Lets Connect!"" */
 footer h4 {
     margin: 0;
     padding: 25px;
@@ -322,10 +258,10 @@ footer h4 {
     justify-content: center;
 }
 
-/* Media Screens (also look at line 125)*/
+/* Media Screens */
 @media screen and (max-width: 820px) {
     .contact-me-items a {
-        font-size: 1em;
+        font-size: auto;
     }
     .contact-me-items {
         display: block;
@@ -345,6 +281,9 @@ footer h4 {
     .subheading {
         font-size: 0.5em;
         display: flex;
+    }
+    #about-me-paragraph {
+        font-size: 1em;
     }
 }
 
