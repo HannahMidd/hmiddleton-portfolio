@@ -40,17 +40,17 @@ header {
 
 .text {
     font-family: Arial, sans-serif;
-    font-size: 65px;
+    font-size: 75px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
-    background-image: url(./project-pics-2/marblehero.jpg);
+    background-image: url(./project-pics-2/marblehero.avif);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: moveBackground 100s infinite linear;
-    -webkit-animation: moveBackground 100s infinite linear;
+    animation: moveBackground 180s infinite linear;
+    -webkit-animation: moveBackground 180s infinite linear;
 }
 
 @keyframes moveBackground {
@@ -67,7 +67,6 @@ header {
 /* Applies to Nav Bar */
 nav {
     text-decoration: none;
-    color: var(--accent-color-1);
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -77,10 +76,11 @@ nav {
 /* Applies to Navigation Bar Items */
 
 nav a {
-    color: var(--accent-color-1);
-    font-size: 1.5em;
+    color: whitesmoke;
+    /* font-size: 1.5em; */
     text-decoration: none;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 /* Nav Bar Psuedo Classes / Effects */
@@ -103,10 +103,10 @@ a {
 }
 
 .work-section-title {
-    color: var(--accent-color-1);
-    background-color: var(--accent-color-2);
-    border: 5px solid var(--accent-color-3);
-    width: 100%;
+    color: whitesmoke;
+    /* background-color: var(--accent-color-2); */
+    /* border: 5px solid var(--accent-color-3); */
+    /* width: 100%; */
     padding: 10px;
     display: flex;
     align-items: center;
@@ -139,7 +139,7 @@ a {
     /* background-color: var(--accent-color-1); */
 }
 
-/* Applies to "work" section displaying portfolio items */
+Applies to "work" section displaying portfolio items
 .project-boxes {
     width: 48%;
     color: var(--accent-color-2);
