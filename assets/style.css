@@ -10,19 +10,13 @@
 /* Applies background color to entire page */
 body {
     background-color: var(--accent-color-2);
-    margin-left: 2%;
-    margin-right: 3%;
+    margin: 0; /* Remove body margin */
     font-family: 'Canva Sans', sans-serif;
+    padding-top: 80px;
 }
 
-/* Applies to main image at top of screen 
-header {
-    background-color: var(--accent-color-2);
-    height: 160px;
-    border: 5px solid var(--accent-color-3);
-} */
 
-/* ================TEST===================== */
+
 
 /* Moving header keyframe */
 header {
@@ -64,28 +58,30 @@ header {
 
 /* =====================END TEST==================== */
 
-/* Applies to Nav Bar */
-nav {
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
-}
-
-/* Applies to Navigation Bar Items */
+/* Align navbar to the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+} 
 
 nav a {
     color: whitesmoke;
-    /* font-size: 1.5em; */
     text-decoration: none;
-    padding-bottom: 40px;
-    padding-top: 20px;
+    margin-left: 20px; /* Add some margin between navigation items */
 }
 
 /* Nav Bar Psuedo Classes / Effects */
 .nav-item:hover {
     color: var(--accent-color-3);
+}
+
+/* Remove left padding from navbar-nav */
+.navbar-nav {
+    margin-right: 30px; /* Adjust the value as needed */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Applies to page section titles (About Me, Work, Contact Me) */
