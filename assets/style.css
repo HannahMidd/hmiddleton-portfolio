@@ -147,8 +147,6 @@ nav a {
     padding-left: 10px;
     margin: 10px 0;
     border: 5px solid var(--accent-color-3);
-    filter: blur(85%);
-    -webkit-filter: blur(85%);
 }
 
 /* CAROUSEL ITEMS */
@@ -166,6 +164,7 @@ nav a {
 
 .carousel-inner {
     padding: 1em;
+    overflow: hidden;
 }
 
 .card {
