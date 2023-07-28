@@ -34,3 +34,21 @@ if (window.matchMedia('(min-width: 768px)').matches) {
 } else {
     $(multipleCardCarousel).addClass('slide');
 }
+
+// Arrow button to scroll to about section
+
+document.addEventListener('DOMContentLoaded', function () {
+    const arrowButton = document.getElementById('arrow-btn');
+    const aboutSection = document.getElementById('about');
+
+    arrowButton.addEventListener('click', function () {
+        // Calculate the offsetTop of the about section relative to the document
+        const offsetTop = aboutSection.offsetTop;
+
+        // Scroll the page to the about section with smooth behavior
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth',
+        });
+    });
+});
