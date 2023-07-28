@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="reset" href="./assets/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,34 +20,34 @@
   <!-- Header and Nav Bar -->
   <header>
 
-<nav class="nav-bar navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
+    <nav class="nav-bar navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
 
 
-    <!-- Navbar toggler button (hamburger icon for smaller screens) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Navbar toggler button (hamburger icon for smaller screens) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Collapsible navbar content -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav navbar-links">
-        <li class="nav-item"> <a href="#about" class="nav-link">ABOUT ME</a> </li>
-        <li class="nav-item"> <a href="#work" class="nav-link">PORTFOLIO</a> </li>
-        <li class="nav-item"> <a href="#contact-list" class="nav-link">CONTACT ME</a></li>
-        <li class="nav-item"> <a href="./assets/Hannah-Middleton-Resume-2023.pdf" class="nav-link">RESUME</a></li>
-        <li class="nav-item"> <a href="https://www.linkedin.com/in/hmossman/"
-            class="nav-link rounded waves-effect waves-light" target="_blank">
-            <i class="fa fa-linkedin-square" style="font-size:20px;color: whitesmoke"></i></a></li>
-        <li class="nav-item"> <a href="https://github.com/hannahMidd" class="nav-link rounded waves-effect waves-light"
-            target="_blank">
-            <i class="fa fa-github mr-2" style="font-size:20px;color: whitesmoke"></i>
-          </a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <!-- Collapsible navbar content -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav navbar-links">
+            <li class="nav-item"> <a href="#about" class="nav-link">ABOUT ME</a> </li>
+            <li class="nav-item"> <a href="#work" class="nav-link">PORTFOLIO</a> </li>
+            <li class="nav-item"> <a href="#contact-list" class="nav-link">CONTACT ME</a></li>
+            <li class="nav-item"> <a href="./assets/Hannah-Middleton-Resume-2023.pdf" class="nav-link">RESUME</a></li>
+            <li class="nav-item"> <a href="https://www.linkedin.com/in/hmossman/"
+                class="nav-link rounded waves-effect waves-light" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:20px;color: whitesmoke"></i></a></li>
+            <li class="nav-item"> <a href="https://github.com/hannahMidd"
+                class="nav-link rounded waves-effect waves-light" target="_blank">
+                <i class="fa fa-github mr-2" style="font-size:20px;color: whitesmoke"></i>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
 
@@ -55,7 +55,7 @@
     <div class="page-title">
       <h1 class="text name-text">Hannah Middleton</h1>
       <h1 class="text">Coding Portfolio</h1>
-              <button id="arrow-btn" href="#about" style="font-size:50px"><i class="fa fa-chevron-circle-down"></i></button>
+      <button id="arrow-btn" href="#about" style="font-size:50px"><i class="fa fa-chevron-circle-down"></i></button>
     </div>
 
   </header>
@@ -86,16 +86,18 @@
 
 
     <!-- NEW CAROSOUL WORK SECTION -->
+    <!-- NEW CAROUSEL WORK SECTION -->
     <br>
     <section id="work">
       <h2 class="section-title">MY PORTFOLIO:</h2>
-      <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Bass Invaders -->
           <div class="carousel-item active">
             <div class="card">
               <div class="img-wrapper"><img src="./assets/project-pics-2/bassinvaders.png" class="d-block w-100"
-                  alt="..."> </div>
+                  alt="...">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Bass Invaders & Space Invaders</h5>
                 <p class="card-text">Explore the power of AI and music combined and wrapped up into the perfect site.
@@ -107,25 +109,12 @@
               </div>
             </div>
           </div>
-          <!-- Fit-N-Fresh -->
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="./assets/project-pics-2/Fit-N-Fresh.png" class="d-block w-100"
-                  alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Fit -N- Fresh</h5>
-                <p class="card-text">Being healthy isn't boring with our 6.5 million
-                  pairings of workouts and recipes. <br>Made with CSS, HTML, JS, Bootstrap.</p>
-                <a href="https://hannahmidd.github.io/Fit-N-Fresh-2.0/" class="btn btn-primary">Deployed Site</a>
-                <a href="https://github.com/HannahMidd/Fit-N-Fresh-2.0" class="btn btn-secondary">GitHub Repo</a>
-              </div>
-            </div>
-          </div>
           <!-- Art by Hannah -->
           <div class="carousel-item">
             <div class="card">
               <div class="img-wrapper"><img src="./assets/project-pics-2/ArtByHannah.png" class="d-block w-100"
-                  alt="..."> </div>
+                  alt="...">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Art By Hannah</h5>
                 <p class="card-text">Check out my creative side on my very own textured artwork business site, Art by
@@ -135,14 +124,30 @@
               </div>
             </div>
           </div>
+          <!-- Fit-N-Fresh -->
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper"><img src="./assets/project-pics-2/Fit-N-Fresh.png" class="d-block w-100"
+                  alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Fit -N- Fresh</h5>
+                <p class="card-text">Being healthy doesn't have to be boring, espcially with our 6.5 million
+                  pairings of workouts and recipes. <br>Made with CSS, HTML, JS, Bootstrap.</p>
+                <a href="https://hannahmidd.github.io/Fit-N-Fresh-2.0/" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/HannahMidd/Fit-N-Fresh-2.0" class="btn btn-secondary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
           <!-- Nature Nerds -->
           <div class="carousel-item">
             <div class="card">
               <div class="img-wrapper"><img src="./assets/project-pics-2/naturenerds.png" class="d-block w-100"
-                  alt="..."> </div>
+                  alt="...">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Nature Nerds</h5>
-                <p class="card-text">Explore the beauty of National Parks with a little guidance from coding nerds. <br>
+                <p class="card-text">Explore the beauty and adventures of National Parks with a little guidance from coding nerds. <br>
                   Made with MERN Stack</p>
                 <a href="https://hannahmidd.github.io/WorkDayScheduler/" class="btn btn-primary">Deployed Site</a>
                 <a href="https://github.com/HannahMidd/WorkDayScheduler" class="btn btn-secondary">GitHub Repo</a>
@@ -156,8 +161,7 @@
                   alt="codingquizphoto"> </div>
               <div class="card-body">
                 <h5 class="card-title">Coding Quiz</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <p class="card-text">Coding can be tough to learn. Take this Coding Quiz for a fun way to learn and test your knowledge!<br> Built with HTML and CSS</p> 
                 <a href="https://hannahmidd.github.io/CodingQuiz/" class="btn btn-primary">Deployed Site</a>
                 <a href="https://github.com/HannahMidd/CodingQuiz" class="btn btn-secondary">GitHub Repo</a>
               </div>
@@ -178,40 +182,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 7</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 8</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 9</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div> -->
-          <br>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="prev">
@@ -225,6 +195,7 @@
         </button>
       </div>
     </section>
+    <!-- ... -->
 
 
 
@@ -256,8 +227,8 @@
 
 
 
-    Bottom Footer
-    <footer class="page-title" id="footer">
+
+    <footer class="footer">
       <h4 class="text">DON'T BE SHY - LET'S CONNECT!</h4>
     </footer>
 
