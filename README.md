@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-The portfolio for Hannah Middletons showcasing projects can be found at the following URL: https://hannahmidd.github.io/HMiddleton-Portfolio/
+The portfolio for Hannah Middletons showcasing projects can be found at the following URL: https://hannahmidd.github.io/hmiddleton-portfolio/
 
 ![Alt Text](./assets/PortfolioScreenshot.png)
 
